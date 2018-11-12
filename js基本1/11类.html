@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Person(name) {
+            this.Name = name;//在类内部声明一个属性Name,初始化为name值
+            this.say = function () {
+                alert(this.Name);
+            }
+        }
+
+        //var p1 = new Person('zy');
+        //p1.say();
+
+        //使用构造方法创建对象
+        var p1 = new Person('zy');
+
+        //alert(typeof (p1));//object
+
+        //alert(typeof (Person('zhh')));//undefined//因为Perons作为函数时,没有返回值,所以是undefined
+
+        //alert(typeof (Person));//Person就是一个函数,类型为function
+
+
+        //第二种定义类的方式
+        function Person2() {
+
+        }
+        var p2 = new Person2();
+        p2.Name = "zhh";
+        p2.say = function () {
+            alert(p2.Name);
+        };
+        p2.say();
+
+
+        //新建出来的对象,是没有Name属性的,因为类Person3中没有Name属性
+        //var p3 = new Person3();
+        //alert(p3.name);
+    </script>
+</body>
+</html>

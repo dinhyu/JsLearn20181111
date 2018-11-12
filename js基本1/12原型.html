@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function Person() {
+            this.Age = 100;
+        }
+        var p1 = new Person();
+        p1.Title = 'abc';
+
+        //通过对象访问原型
+        p1.__proto__.Title = 'abc';//为Person类增加Title属性成员
+        //通过类名访问原型
+        //Person.prototype.Title = 'abc';//为Person类增加Title属性成员
+
+        var p2 = new Person();
+        alert(p2.Title);//此时p2对象也有Title属性了
+    </script>
+</body>
+</html>

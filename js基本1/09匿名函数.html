@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" id="btnShow" value="显示" />
+    <script>
+        //定义匿名函数,赋值给一个变量
+        var f1 = function (a, b) {
+            alert(a + b);
+        };
+        //通过变量调用
+        //f1(1, 2);
+
+        //典型应用:为事件绑定处理函数,传递回调函数
+        document.getElementById('btnShow').onclick = function () {
+            alert(123);
+        }
+    </script>
+</body>
+</html>

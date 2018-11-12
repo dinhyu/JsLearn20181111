@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //使用[]定义数组
+        var array1 = [123, 'abc'];
+        array1[0];
+
+        //键值对(键:值...)
+        var array2 = {
+            name: 'zhh',
+            age: 18,
+            gender: 'male'
+        };
+        //alert(array2['name']);//将array2认为是集合,通过键访问值
+        //alert(array2.name);//将array2认为是对象,通过属性访问值
+
+        //定义json数组
+        var temp = [
+            {
+                title: 'zhh',
+                age: 18
+            },
+            {
+                title: 'aaa',
+                age: 13
+            },
+            {
+                title: 'ssh',
+                age: 19
+            }
+        ];
+
+        //输出每个对象的title值
+        for (var index in temp) {
+            alert(temp[index].title);
+        }
+    </script>
+</body>
+</html>

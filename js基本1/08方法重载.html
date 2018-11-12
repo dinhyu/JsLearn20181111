@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //不存在方法重载
+        function add(a,b) {
+            alert(a+b);
+        }
+
+        //后面声明的方法会覆盖前面的同名方法
+        function add(a, b, c) {
+            alert(a + b + c);
+        }
+        //add(1, 2);
+
+        //可变参数
+        function count() {
+            //使用arguments获取所有参数,是一个数组
+            alert(arguments.length);//返回数组的元素个数
+        }
+        //调用
+        //sum(1, 2, 3, 4);
+
+        function sum() {
+            //使用arguments获取所有参数,是一个数组
+            //alert(arguments.length);//返回数组的元素个数
+            var sum1 = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum1 += arguments[i];
+            }
+            alert (sum1);
+        }
+        sum(1,2,3,4,5,6);
+    </script>
+</body>
+</html>
