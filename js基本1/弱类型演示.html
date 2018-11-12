@@ -6,14 +6,33 @@
 </head>
 <body>
     <script type="text/javascript">
-        //声明一个变量,赋值为10,这里a是int类型
-        var a = 10;
-        alert(a);
-        /*
-         赋值为"abc",这里a是string类型
-         */
-        a = "abc";
-        alert(a);
+        ////声明一个变量,赋值为10,这里a是int类型
+        //var a = 10;
+        //alert(a);
+        ///*
+        // 赋值为"abc",这里a是string类型
+        // */
+        //a = "abc";
+        //alert(a);
+
+        //Undefined
+        //当变量被声明之后,没有初始化,则值为undefined
+        var a1;
+        alert(a1);
+
+        //输出类型
+        alert(typeof (a1));//返回a1变量的类型对应的字符串
+
+        //Null
+        a1 = null;
+        alert(a1);
+
+        //输出类型
+        alert(typeof (a1));//null是一个object的值
+
+        var a2 = '100';
+        alert(a2 + 1);//字符串拼接
+        alert(parseInt(a2+1));//转成整数后,进行算术加运算
     </script>
 </body>
 </html>

@@ -5,17 +5,32 @@
     <title></title>
     <script type="text/javascript">
         alert("HelloWorld");
-        //创建时间对象
-        var time = new Date();
-        //获取世界时间,有时区
-        alert(time.toString());
-        //显示年月日
-        alert(time.toLocaleDateString());
-        //显示时间
-        alert(time.toLocaleTimeString());
+        ////创建时间对象
+        //var time = new Date();
+        ////获取世界时间,有时区
+        //alert(time.toString());
+        ////显示年月日
+        //alert(time.toLocaleDateString());
+        ////显示时间
+        //alert(time.toLocaleTimeString());
+
+        //代码分离:一般不把html与js混合写
+        //定义函数,用于获取时间对象并显示时间
+        function showTime() {
+            var date = new Date();
+            alert(date.toLocaleDateString());
+            return false;//可以让a的跳转不执行
+        }
     </script>
+    
 </head>
 <body>
-
+    <input type="button" value="显示当前时间" onclick="showTime();" />
+    <hr />
+    点击超链接,执行js脚本,而不进行url跳转
+    方式一:让js函数返回false,在onclick中也会返回false;
+    <a href="http://www.baidu.com" onclick="return showTime();">显示当前时间</a>
+    方式二:将href指定成一段脚本
+    <a href="javascript:showTime();">显示当前时间</a>
 </body>
 </html>
