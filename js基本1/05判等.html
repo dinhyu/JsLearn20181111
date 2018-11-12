@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        //双等号==判断
+        //var a1;
+        //var a2 = null;
+        //undefined表示没有,null表示没有,a1与a2的值相等
+        //if (a1 == a2) {
+        //    alert('ok');
+        //} else {
+        //    alert('no');
+        //}
+
+        //三等号===判断
+        //===先判断类型是否相同再判断值是否相同,a1与a2的类型不相等
+        //if (a1 === a2) {//no
+        //    alert('ok');
+        //} else {
+        //    alert('no');
+        //}
+
+        //var b1 = 123, b2 = '123';
+
+        //if (b1 == b2) {//ok
+        //    alert('ok');
+        //} else {
+        //    alert('no');
+        //}
+
+        //if (b1 === b2) {//no
+        //    alert('ok');
+        //} else {
+        //    alert('no');
+        //}
+
+        //判断变量是否可用
+        //判断是否为undefined:typeof(temp)=='undefined'
+        //判断是否为null:temp===null
+
+        //null与'null'是不同的
+        //var temp = null;
+        //if (temp == 'null') {
+        //    alert('no');
+        //} else {
+        //    alert('ok');
+        //}
+
+        //var temp;
+        //if (typeof(temp)=='undefined' || temp===null) {
+        //    alert('no');
+        //} else {
+        //    alert('ok');
+        //}
+        //简写
+        //var temp;
+        //if (temp == null) {
+        //    alert('no');
+        //} else {
+        //    alert('ok');
+        //}
+
+        //(typeof (Date()));//返回function
+        //alert(typeof (Date));//调用Date()方法返回当前时间的字符串,即返回string
+
+        //数字判断:isNaN(),不能转换为数字时返回true
+        //判断是否不是数字
+        //var temp = '123';//根据字面值判断,'123'是数字
+        //alert(isNaN(temp));
+
+        //eval()将一段字符串作为js代码解析
+        eval('alert("123")');
+    </script>
+</body>
+</html>
